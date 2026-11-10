@@ -1,0 +1,42 @@
+# Gradle
+.gradle/
+.kotlin/
+build/
+output/
+
+# Local configuration (SDK path, Cesium ion token). Never commit this file.
+local.properties
+
+# Build artifacts
+*.apk
+*.aab
+output.json
+
+# IDE
+*.iml
+.idea/
+.vscode/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Signing
+*.jks
+*.keystore
+google-services.json
+
+# OS / logs / profiling
+.DS_Store
+*.log
+*.hprof
+
+# Recordings pulled from the emulator or device
+recordings/
+*.mp4
+
+# AI assistant workspaces and session data
+.claude/
+.codex/
+.cursor/
+AGENTS.md
+CLAUDE.md

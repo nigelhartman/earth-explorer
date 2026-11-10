@@ -1,0 +1,3 @@
+# Copy this entry into local.properties and replace the placeholder.
+# local.properties is ignored by Git and must not be committed.
+CESIUM_ION_TOKEN=your_restricted_cesium_ion_token

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Earth Explorer</string>
+    <string name="hello">Hello, Spatial SDK!</string>
+</resources>
