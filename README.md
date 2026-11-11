@@ -23,7 +23,7 @@ https://github.com/user-attachments/assets/784ba626-a220-4eb2-9c17-bda5f688aa53
 
 <div align="center">
 
-**[Why](#-why-this-exists) · [What's on the globe](#-whats-on-the-globe) · [Earth to city](#-earth-to-city) · [Setup](#-setup) · [Scripted demos](#-scripted-demos) · [Under the hood](#-under-the-hood) · [Data sources](#-data-sources-and-attribution) · [Limitations](#-limitations)**
+**[Why](#-why-this-exists) · [What's on the globe](#-whats-on-the-globe) · [Earth to city](#-earth-to-city) · [Setup](#-setup) · [Under the hood](#-under-the-hood) · [Data sources](#-data-sources-and-attribution) · [Limitations](#-limitations)**
 
 </div>
 
@@ -189,29 +189,6 @@ pico-cli files pull /sdcard/take.mp4 ./recordings/take.mp4
 ```
 
 The connected test runner uninstalls the app afterwards; reinstall to explore.
-
-## 🎬 Scripted demos
-
-Debug builds register a broadcast receiver that drives the app through the
-same store calls the hand gestures use. It is how the trailer recording was
-made repeatable. It is absent from release builds.
-
-```sh
-A="adb shell am broadcast -a com.example.earthexplorer.DIRECT -p com.example.earthexplorer"
-
-$A --es cmd city --ef lat 52.520815 --ef lon 13.411050 --es name Berlin --es country Germany
-$A --es cmd pan --ef dx 180 --ef dy 0 --el ms 2000     # eased hand pan
-$A --es cmd earth                                      # fly the plates back into the sphere
-$A --es cmd panels --ez on true                        # show the command deck
-$A --es cmd layer --es name earthquakes --ez on true   # capitals|aircraft|earthquakes|sun|positions|webcams|grid
-$A --es cmd focus --ef lat 37.7946 --ef lon -122.4030 --ez blink true
-$A --es cmd assist --el hold 3000                      # pinch-and-hold the orb for 3 s
-$A --es cmd reset
-```
-
-A second debug receiver, `CityDebugReceiver`, exposes layer toggles, ISS
-focus, quake and webcam selection for smoke tests. Both log under `Director`
-and `LayerSmokeTest`, and neither prints tokens or authenticated URLs.
 
 ## 🔧 Under the hood
 
