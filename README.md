@@ -1,11 +1,3 @@
-
-
-<div align="center">
-
-https://github.com/user-attachments/assets/784ba626-a220-4eb2-9c17-bda5f688aa53
-
-</div>
-
 <div align="center">
 
 # 🌍 Earth Explorer
@@ -22,6 +14,8 @@ Google Photorealistic 3D Tiles, all inside one volumetric window.
 [![License: MIT](https://img.shields.io/badge/License-MIT-F0A63C?style=flat-square)](LICENSE)
 
 _A spatial take on [God's Eye View](https://github.com/bilawalsidhu/gods-eye-view)._
+
+https://github.com/user-attachments/assets/784ba626-a220-4eb2-9c17-bda5f688aa53
 
 </div>
 
