@@ -1,14 +1,8 @@
-<!-- ============================================================================
-     TRAILER SLOT
-     Paste the trailer here. The easiest way on GitHub: open any issue or PR
-     comment box, drag the .mp4 into it, copy the generated
-     https://github.com/user-attachments/assets/... link and put it on its own
-     line below. GitHub renders it as an inline video player.
-     ============================================================================ -->
+
 
 <div align="center">
 
-<!-- trailer goes here -->
+https://github.com/user-attachments/assets/784ba626-a220-4eb2-9c17-bda5f688aa53
 
 </div>
 
